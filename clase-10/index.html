@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Diseño y nuevos medios" />
+        <!--Vamos a buscar el CSS de Bootstrap--> 
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Faster+One&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+
+        <!--Podemos hacer algunos ajustes a sus CSS variables -->
+        <style>
+            :root {
+                --bs-body-color: #fff;
+                --bs-body-bg: #111;
+                --bs-body-font-family: 'Lato', sans-serif;
+            }
+
+            h1,h2,h3,h4,h5,h6{
+
+            font-family: 'Faster One', cursive;
+            font-weight: 400;
+        }
+
+        @media (min-width: 576px){
+            body{
+                background: #454a56 url('images/portada.jpg') right bottom no-repeat;
+                background-size: 60% auto;
+            }
+        }
+
+        </style>
+        <title>Rápidos y Furiosos &#127909;</title>
+    </head>
+    <body>
+        <div class="container fixed-top">
+            <nav class="d-flex justify-content-between py-3"><a href="index.html" class="fw-bold">Portada</a> <a href="peliculas.html">Películas</a> <a href="locaciones.html">Locaciones</a> <a href="ganancias.html">Ganancias</a></nav>
+        </div>
+        <main class="container">
+            <div class="row" style="min-height: 90vh;">
+                <div class="col-sm-6 my-auto me-auto">
+                    <h1 class=display-1>Rápidos y Furiosos</h1>
+                        <p>Bienvenido al sitio oficial de la saga de Rápidos y Furiosos. Acá podrás encontrar las seis primeras películas, dónde fueron grabadas y cuánto recaudaron. Haz click<a href="https://www.shock.co/cine-tv/rapido-y-furioso-10-curiosidades-de-la-saga-que-cumple-20-anos#:~:text=Se%20inspir%C3%B3%20un%20art%C3%ADculo%20de,y%20el%20resto%20es%20historia.&text=2%20fast%202%20furious%2C%20es,que%20no%20aparece%20Vin%20Diesel."> acá</a> para conocer algunas curiosidades de la saga.</p>
+                    </p>
+                </div>
+            </div>
+        </main>
+        <div class="container fixed-bottom">
+            <footer class="d-flex justify-content-between py-3">
+                <div>Ángeles Hurtado</div>
+                <div>Wikipedia</div>
+            </footer>
+        </div>
+        <script>
+            //un script cortito para ponerle una clase de bootstrap a todo vínculo
+            document.querySelectorAll("a").forEach((a) => a.classList.add("link-warning"));
+        </script>
+    </body>
+</html>
